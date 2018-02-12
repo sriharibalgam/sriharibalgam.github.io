@@ -1,5 +1,6 @@
 # sriharibalgam.github.io
 
 
-### Do not Immitate 
-          ### Understand
+
+
+# Do not Immitate, Understand
