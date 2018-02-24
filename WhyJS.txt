@@ -1,0 +1,26 @@
+JavaScript is one of the most important programming languages of all time, not simply because of its popularity, but because it popularized two paradigms which are extremely important for the evolution of programming:
+
+Prototypal Inheritance (objects without classes, and prototype delegation, aka OLOO — Objects Linking to Other Objects), and
+Functional Programming (enabled by lambdas with closure)
+
+One powerful use of closures is to use the outer function as a factory for creating functions that are somehow related.
+When you call a nested function in Javascript. Javascript remembers, or encloses any variables called within the execution context of the parent function, making them available to the function nested within
+Closures allow us to bind a function to any variables in outer scope so that we may use them at a later time.
+
+JAVASCRIPT IS A STATIC SCOPING (LEXICAL SCOPING) LANGUAGE.
+
+***> Functional Programming can achieved ny accepting Higher order functions.
+
+    **> Higher-order function is a function  which takes another functions as a argument or returns another function as a result.
+    **> Functions are treated as a Objects in JS.. they are called as First-class Functions (First class citizens
+    
+    
+---------
+CALLBACK:
+---------
+    A callback function is that executed at an end of the operation once all of the other operations has beed completed. 
+        callback function is passed as last argument in the function. frequently, its defined inline as an anonymous function.
+    JavaScript is a Single Threaded, Meaning that only one operation happens at a time. 
+
+
+Thought carrier I have been working for startups I want to work with Established company and learn more working as a team player and excel as an individual in technology.

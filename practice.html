@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>..::Practice::..</title>
+        <script src="practice.js"> </script>
+        <script>
+            Function.prototype.method = function (name, func) {
+                this.prototype[name] = func;
+                return this;
+            };
+            //console.log(method("Rama"));
+            document.writeln('Hello, world!');
+
+            function readURL(input) {
+                
+                 if(input.files && input.files[0]) {
+                     var reader = new FileReader();
+
+                     console.log(reader);
+
+                     reader.onload = function(e){
+                         $("#displayArea").attr("src", e.target.result);
+                     };
+
+                     reader.readAsDataURL(input.files[0]);
+                 }
+            }
+        </script>
+    </head>
+    <body>
+        Loading ....
+        Practicing Javascript
+        <div id="programCode"></div>
+    </body>
+    
+    <form id="imageUpload">
+        <input type='file' id="cat_img" onchange="readURL(this)"/>
+        <img  id="displayArea" height=200 width=200>        
+    </form>
+</html>
