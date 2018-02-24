@@ -1,6 +1,7 @@
 ### Closures
 @@@ Referrence Links:
     https://medium.com/code-monkey/understanding-closures-in-javascript-f20821df492d
+<<<<<<< HEAD
     http://javascriptissexy.com/understand-javascript-closures-with-ease/
 
 
@@ -45,11 +46,21 @@ name("Balgam");
                 console.log(j); // which prints 12345. 
             }(i)), 1000);
         }
+=======
+
+
+
+### What is Closure:
+    Closure is the function defined inside another function which has the access to the outer functions variables.
+=>  A closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+>>>>>>> origin/master
 
 ### How Closures Works :
     ```js
     
     function creature(name){
+<<<<<<< HEAD
         var myName = name; // private Variable
         function getName(){ // creating Closure here
             return myName;
@@ -58,6 +69,19 @@ name("Balgam");
     }
 
     var rat = creature('Srihari Balgam');
+=======
+
+        var myName = name; // private Variable
+
+        function getName(){ // creating Closure here
+            return myName;
+        }
+
+        return getName();
+    }
+
+    var rat = creature('Rat');
+>>>>>>> origin/master
     console.log(rat)
 
     // the closure provides references to the actual variables and not just static values.
