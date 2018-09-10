@@ -1,6 +1,4 @@
-# sriharibalgam.github.io
-
-[Interview Stuff](https://github.com/sriharibalgam/sriharibalgam.github.io)
+# [sriharibalgam.github.io](https://github.com/sriharibalgam/sriharibalgam.github.io)
 
 
 # Do not Immitate, Understand
