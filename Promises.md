@@ -1,23 +1,6 @@
 
 ## Promises
-
-Supported in ES6
-
-The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
-
-    ````js
-    var promise = new Promise(function(resolve, reject) {
-        setTimeout(resolve, 100, 'foo');
-        });
-
-        promise.then(function(data){
-            console.log(data); // foo
-        })
-        .catch(function(err){
-            console.log(err)
-        })
-        console.log(promise);// expected output: [object Promise]
-    ````
+*Def:* A Promise is an object may produce a single value sometime in the future. Either a *Resolved* or a Reason that it's not resolved i.e *Rejected*
 
 A Promise is in one of these states:
 
@@ -44,21 +27,31 @@ As the Promise.prototype.then() and Promise.prototype.catch() methods return pro
     * Promise.prototype.catch(onRejected)
     * Promise.prototype.finally(onFinally)
 
+Supported in ES6
 
+The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
 
-    Marks :
-
-    1st year    636     1000
-
-    2-1         498     750
-    2-2         435     750     -44     388
-                                889
-    3-1         482     750
-    3-2         488     750
-                                970
-    4-1         500     750
-    4-2         565     700     -43     522
-                                1022
-
+    ````js
+    var promise = new Promise(function(resolve, reject) {
+            if(true){
+                resolve('Resolved');
+            } else {
+                console.log('Rejected');
+            }
+        });
+    // Execute Promise
+        promise
+            .then(function(data){
+                console.log(data); // foo
+            })
+            .catch(function(err){
+                console.log(err)
+            })
+        console.log(promise); // expected output: Resolved
+        /*Promise {<resolved>: "Resolved"}
+        __proto__: Promise
+        [[PromiseStatus]]: "resolved"
+        [[PromiseValue]]: "Resolved" */
+    ````
 
     
