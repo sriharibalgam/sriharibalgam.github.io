@@ -19,6 +19,7 @@ MUTABLE JavaScript Values are:
 
     Example of MUTABLE: (Object || Array)
     -------------------------------------
+```s
     let a = [4, 8, 40];
     let b = a;
     a.pop();
@@ -78,9 +79,7 @@ for (var i = 0; i < arr.length; i++) {
         console.log('Index: ' + i + ', value: ' + arr[i]);
     }, 3000);
 }
-
-Output is :
-
+```
 
 We work on arrays all the time and one of the most frequent operations that we perform on arrays is removing duplicates. There are a few ways to do this. 
 
@@ -113,7 +112,8 @@ for(var i =0; i<10; i++){
 
 //To Overcome this Use below code
 
-//1 The anonymous outer function gets called immediately with i as its first argument and will receive a copy of the value of i as its parameter e.
+1. The anonymous outer function gets called immediately with i as its first argument and will receive a copy of the value of i as its parameter e.
+```s
 for(var i = 0; i < 10; i++) {
     setTimeout((function(e) {
         return function() {
@@ -147,3 +147,4 @@ for(var i = 0; i < 10; i++) {
 for(let i=0; i<5; i++){
     setTimeout(()=> { console.log(i); });
 }
+```

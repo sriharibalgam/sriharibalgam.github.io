@@ -1,45 +1,9 @@
-/// Links
-[https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d] Event Driven
-
-Why NodeJS is prefered:
-    It is uses Events Heavily (Event Driven)
-    As soon as Node starts its server, it simply initiates its variables, declares functions and then simply waits for the event to occur.
-
-
-
-How Node Applications Work?
-    In Node Application, any async function accepts a callback as the last parameter 
-    and a callback function accepts an error as the first parameter. 
-    func("", function(err, data){});
-
-//=========================================================
-
-Node
+### HTTP Headers Methods 
 
 
 
 
-
-
-----------------------------------------------------------------------------
-======================          BEST PRACTICES =============================
-----------------------------------------------------------------------------
-USE ENVIRONMENTAL VARIABLES 
-    process.env.NODE_ENV
-    User .catch() handle promise
-    Use Logging libraries
-
-
-
-
-
-
-
-======================================================================================
-================================   HTTP  =============================================
-======================================================================================
-
-HTTP MEHTODS (http request methods/options):
+**HTTP MEHTODS (http request methods/options):**
 --------------------------------------------
     GET
     POST
@@ -51,7 +15,7 @@ HTTP MEHTODS (http request methods/options):
     TRACE
     CONNECT
 
-HTTP HEADERS:
+**HTTP HEADERS:**
 -------------
     Accept
     Accept-Charset
@@ -69,7 +33,7 @@ HTTP HEADERS:
     Authorization
     Cache-Control
 
-    Request Headers:
+    **Request Headers:**
     ---------------
         Access-Control-Allow-Origin:*
         Connection:keep-alive
@@ -89,7 +53,7 @@ HTTP HEADERS:
         X-kuma-revision:1268563
         x-xss-protection:1; mode=block
     
-    Response Header:
+    **Response Header:**
     ----------------
         HTTP/1.1 200 OK
         Access-Control-Allow-Origin: *
@@ -111,24 +75,34 @@ HTTP HEADERS:
         Connection: keep-alive
 
 
-HTTP STATUS CODES:
+**HTTP STATUS CODES:**
 -----------------
+```
 100 - Continue
+```
 
-200 -- OK 
+```
+200 -- OK
+201 -- Created
 202 -- Accepted
+```
 
+```
 301 -- Moved Permanently
 307 -- Temporary Redirect
 308 -- Permanent Redirect
+```
 
+```
 400 -- Bad Request
 401 -- Unauthorized
 403 -- Forbidden
 404 -- Not Found
 408 -- Request Timeout
+409 -- Record Already Exists
+```
 
-
+```
 500 -- Internal Server Error
 501 --  Not Implemented
 502 --  Bad Gateway
@@ -136,3 +110,4 @@ HTTP STATUS CODES:
 504 --  Gateway Timeout
 505 --  HTTP Version Not Supported
 511 --  Network Authentication Requireds
+```

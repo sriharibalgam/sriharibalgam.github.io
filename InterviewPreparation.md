@@ -1,4 +1,77 @@
 
+#### Function composition
+ FC is the process of combining two or more functions to produce a new function.
+ Composing functions together is like snapping together a series of pipes for our data to flow through.
+
+ ### Object Composition 
+    OC Assembling or composing objects to get more complex behavior.
+
+[https://www.toptal.com/javascript#hiring-guide]
+[https://www.code-sample.com/2015/04/javascript-interview-questions-answers.html]
+[https://stackoverflow.com/questions/27642239/what-is-polymorphism-in-javascript](Polymerphism)
+[http://www.zipcon.net/~swhite/docs/computers/languages/object_oriented_JS/methods.html](Constructor & Encaptulation)
+[https://mindmajix.com/javascript-interview-questions] Concepts
+[http://www.techbeamers.com/javascript-interview-questions-answers/#q30] (30 Questions)
+
+#### Prototype &  Inheritance
+* Explain the difference between classical inheritance and prototypal inheritance.
+* Describe inheritance and the prototype chain in JavaScript. Give an example.
+* Compare and contrast objects and hashtables in JavaScript.
+* **Describe the different ways of creating objects and the ramifications of each. Provide examples.
+* Give an example of a time that you used Prototypal OO in JavaScript.
+* How do you define a class and its constructor?
+* What is function overloading in JavaScript?
+* What is Prototype and When is it Used?
+
+* What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
+* Explain closures in JavaScript. What are they? What are some of their unique features? How and why might you want to use them? Provide an example.
+
+
+
+What is Object in JavaScript?
+What is the Prototype object in JavaScript and how it is used?
+What is "this"? What is its value?	
+Explain why "self" is needed instead of "this".
+Explain how to write class methods vs. instance methods.
+
+Can you explain the difference between call and apply?
+Explain why Asynchronous code is important in JavaScript?
+Can you please tell me a story about a JavaScript performance problems?
+Tell me your JavaScript Naming Convention?
+
+What is Hoisted in JavaScript?	
+What is scope variable in JavaScript?
+What is Associative Arrays in JavaScript?
+What are two-way data binding and one-way data flow, and how are they different?
+
+
+ 
+
+
+How To Create the Namespace in JavaScript?
+What Is Difference Between Undefined and Object?
+How To Convert a string to Lowercase?
+How To modify the URL of page without reloading the page?
+How To open URL in new tab in JavaScript?
+
+OOPS JS
+
+Difference between Classic Inheritance and Prototypical Inheritance
+    What is difference between private variable, public variable and static variable? How we achieve this in JS?
+    How to add/remove properties to object in run time?
+    How to achieve inheritance ?
+    How to extend built-in objects?
+    Why extending array is bad idea?
+    DOM and JS
+
+Difference between browser detection and feature detection
+    DOM Event Propagation
+    Event Delegation
+    Event bubbling V/s Event Capturing
+
+#OOJS:
+
+* What is the Prototype object in JavaScript and how it is used?
 
 1.Closure
 	While you create the JavaScript function within another function and the inner function freely access all the variable of outer function

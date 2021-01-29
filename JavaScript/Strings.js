@@ -44,3 +44,12 @@ const breakLongLineWith_n = "This is a string\nthat spans across\nthree lines.";
 const threeLines = `This is a string
 that spans across
 three lines.`;
+
+// RegEx of String
+
+let strRegEx = 'RegEx methods on Strings';
+
+strRegEx.search(/on/); // 
+strRegEx.match(//); //
+strRegEx.replace(/sds/, ''); // 
+console.log(strRegEx.match(/methods/g));

@@ -1,4 +1,4 @@
-````js
+```js
 for(var line = "#"; line.length < 8 ; line += " #") {
     console.log(line);
 }
@@ -25,7 +25,7 @@ for (var n = 1; n <= 100; n++) {
     output += "Fizz";
   if (n % 5 == 0)
     output += "Buzz";
-  console.log(output || n); // 
+  console.log(output || n); //
 }
 //==============================|| Printing Chess board Pattern ||======================================//
 var size = 8;
@@ -36,13 +36,13 @@ var chessBoard = "";
             // Method 1
             if( (whites + blacks) % 2 == 0)
                 chessBoard += "[]";
-            else 
+            else
                 chessBoard += "::";
-            
-            // Method 2          	
+
+            // Method 2
             chessBoard += (whites % 2 == 0) ? (blacks % 2 == 0) ? "::" : "[]" : (blacks % 2 != 0) ? "::": "[]";
         }
-        chessBoard +="\n"; 
+        chessBoard +="\n";
     }
 	console.log(chessBoard);
 
@@ -100,7 +100,7 @@ console.log(arr2); // [{name: "akhil", lang: "telugu"}, {name:	"Srihari Balgam",
 // Recursive Function
 
 function isEven(nbr){
-  // it should be a boolean	
+  // it should be a boolean
   if(nbr == 0) return true;
   else if(nbr == 1) return false;
   else if(nbr < 0) return isEven(-nbr);
@@ -154,7 +154,7 @@ function gvco1(str)
   	iterations = 0;
   	for(var i=0;i<str.length;i++){
       for(var j=0,count=0;j<str.length;j++){
-        if(str[i] == str[j]) 
+        if(str[i] == str[j])
           count++;
         iterations++
       }
@@ -169,12 +169,12 @@ function gvco2(str)
 	//var str = str.split("");
   	var obj ={};
   	iterations = 0;
-  	
+
   	while(str.length){
       for(var j=0,count=0;j<str.length;j++){
 		//console.log(str.charAt(i),str.charAt(j));
         //console.log(str.charAt(i) == str.charAt(j));
-        if(str.charAt(0) == str.charAt(j)) 
+        if(str.charAt(0) == str.charAt(j))
           count++;
         iterations++
       }
@@ -217,7 +217,7 @@ console.log(readBook in obj); // Returns true ...---- in --- Checks the existanc
 var obj1 = { age : 26 };
 var obj2 = obj1;
 var obj3 = { age : 26 };  // having same property but lives a seperate life
- 
+
 console.log(obj2 === obj1); // true
 console.log(obj2 === obj3); // false
 
@@ -227,26 +227,26 @@ console.log(obj1); // { age: 25 }
 
 
 /***************************************************** */
- //φ =   n11n00 − n10n01 / √n1•n0•n•1n•0  
+ //φ =   n11n00 − n10n01 / √n1•n0•n•1n•0
    // converting this formula into Javascript
 
-   // Computing Correlation 
+   // Computing Correlation
 
     function pie(table){
 
-       return  (table[3] * table[0]) - (table[2] * table[1]) / 
+       return  (table[3] * table[0]) - (table[2] * table[1]) /
         Math.sqrt(
                 ( table [2] + table [3]) *
                 ( table [0] + table [1]) *
                 ( table [1] + table [3]) *
-                ( table [0] + table [2]) 
+                ( table [0] + table [2])
             );
     }
 
     console . log ( phi ([76 , 9 , 4 , 1]) ) ;
 // → 0.06859943405700354
 
-    
+
 /*************************************************************. */
 var arr = [1,2,4,15,14,4,8];
 var stringArr = ["Srihari", "Balgam", "Vikram Billa", "Rudhra"];
@@ -263,7 +263,7 @@ console.log(arr); // [2, 4, 15, 14, 4, 8]   -- 1 is removed
 arr.unshift(40); // Adds a new element in the Beginning of an Array  -- RETURNS size of new array
 console.log("After Unshift ", arr); // [40, 2, 4, 15, 14, 4, 8]
 
-var index = arr.indexOf(15); // Returns position of an item 
+var index = arr.indexOf(15); // Returns position of an item
 console.log("Index of 15 Fount at Position: ", index); // 3
 
 var lastIndex = arr.lastIndexOf(4); // returns the last occurance position of repeated item.
@@ -281,7 +281,7 @@ stringArr.forEach(function(item, index, array){
 var sliceArr = arr.slice(2,4); // [40, 2, 4, 15, 14, 4, 8].slice(2,4)
 console.log(sliceArr); // [4, 15] prints inbetween arr[2] and arr[4] but not arr[4]
 
-var sliceArr = arr.slice(2); // 
+var sliceArr = arr.slice(2); //
 console.log(sliceArr); // Print [4, 15, 14, 4, 8]
 
 
@@ -292,11 +292,11 @@ console.log(sliceArr); // Print [4, 15, 14, 4, 8]
     argumentCounter("rama", "krishna", "srihari", "hari");
 
     function passOneArgAndReadOtherFromArgumentObj(passedFirstArg) {
-        console.log("Length of Args: ", arguments.length) // Length of Args:  8 || Even I have passed one 
-        console.log(passedFirstArg); // print true 
+        console.log("Length of Args: ", arguments.length) // Length of Args:  8 || Even I have passed one
+        console.log(passedFirstArg); // print true
         var entry = { namesFromArguments: [], isReading: passedFirstArg};
-        
-        for( var i=1; i < arguments.length; i++) // Skip [0] bcz we passed 1st arg 
+
+        for( var i=1; i < arguments.length; i++) // Skip [0] bcz we passed 1st arg
             entry.namesFromArguments.push(arguments[i]);
         console.log(entry); //
     }
@@ -323,18 +323,18 @@ console.log(sliceArr); // Print [4, 15, 14, 4, 8]
 
     /* range function to take an optional third argument that indicates the “step” value used to build up the array. If no step is given, the array elements go up by increments of one, corresponding to the old behavior. The function call range(1, 10, 2) should return [1, 3, 5, 7, 9]. Make sure it also works with negative step values so that range(5, 2, -1) produces [5, 4, 3, 2].*/
 
-    function range(start, end, step) {  
-        var rangeArr = [];  	
-        
+    function range(start, end, step) {
+        var rangeArr = [];
+
         step = step ? step : 1; // If no Step provided Will take 1 as default
-    
+
         if(start < end) {
             for( var i = start; i <= end; i += step)
             rangeArr.push(i);
         } else {
-            for( var j = start; j >= end; j += step) // j=10; 10 >= 2; j = j + (-2) 
+            for( var j = start; j >= end; j += step) // j=10; 10 >= 2; j = j + (-2)
             rangeArr.push(j);
-        }     
+        }
         return rangeArr;
     }
 
@@ -345,7 +345,7 @@ console.log(sliceArr); // Print [4, 15, 14, 4, 8]
 
     /*** 2nd way of Doing **********************/
     function printRange(start,end,step)
-    {	
+    {
         var newarr = [];
 
         var reverseProcedure = (start < end);
@@ -402,7 +402,7 @@ function isPolindrome(str, len){
     // way 1
 	var polyStr = str.split('').reverse().join('');
     console.log( (polyStr === str) );
-	
+
 	// way 2
 	for( var i =0; i < len; i++){
 		if(str[i] !== str[len - 1 -i]) return false;
@@ -443,7 +443,7 @@ function gtCheck(n){
       return o+m > n;
     }
 }
-// Closure - a higher order Function that 
+// Closure - a higher order Function that
 /*********************************|| JSON ||********************************** */
 var stringEach = [2,4,20,45,78,99, "srihari","Balgam"];
 
@@ -481,7 +481,7 @@ console.log(filtered.map(function(person){
 Closures are a poor man’s object || Objects are truly a poor man’s closures.
     Closures Used For:
         in Object Data Privacy
-        in Event Handlers 
+        in Event Handlers
         in Callbacks
         in Partial Applications, Currying
         In FP
@@ -489,11 +489,11 @@ Closures are a poor man’s object || Objects are truly a poor man’s closures.
 Function composition
 -------------------- is the process of combining two or more functions to produce a new function.
  Composing functions together is like snapping together a series of pipes for our data to flow through.
-A MUTABLE object is an object whose state can be modified after it is created. 
-An IMMUTABLE object is an object whose state cannot be modified after it is created. 
+A MUTABLE object is an object whose state can be modified after it is created.
+An IMMUTABLE object is an object whose state cannot be modified after it is created.
 
 IMMUTABLE JavaScript Values are:
-    Numbers and Strings. 
+    Numbers and Strings.
 MUTABLE JavaScript Values are:
     Objects, Arrays, functions, classes, sets, and maps.
 
@@ -505,7 +505,7 @@ MUTABLE JavaScript Values are:
     console.log(a); // 4, 8
     console.log(b); // 4, 8
     console.log(a === b); // TRUE
-    //  For Mutable values, updating state applies across all references to that variable 
+    //  For Mutable values, updating state applies across all references to that variable
 
     let a = {
         foo: 'bar'
@@ -524,7 +524,7 @@ MUTABLE JavaScript Values are:
     console.log(a) //st
     console.log(b) //test
     console.log(a === b) //false
-    // For IMMUTABLE values, updating state can be reassigned to a new object ||  we have no way of changing internal state of the data 
+    // For IMMUTABLE values, updating state can be reassigned to a new object ||  we have no way of changing internal state of the data
 
 
 
@@ -562,14 +562,14 @@ for (var i = 0; i < arr.length; i++) {
 Output is :
 
 
-We work on arrays all the time and one of the most frequent operations that we perform on arrays is removing duplicates. There are a few ways to do this. 
+We work on arrays all the time and one of the most frequent operations that we perform on arrays is removing duplicates. There are a few ways to do this.
 
 Loop over an array, and move every item into a new array if it does not already exist in the new array.
 Use the filter function to do the same activity.
 
-A newer, concise and simpler way is to use the new Set data strucuture. 
+A newer, concise and simpler way is to use the new Set data strucuture.
 
-Use the Set data structure, which automatically takes an iterable and removes duplicates. Then, use the from function of the Array object which will then take an iterable and convert it into an array. 
+Use the Set data structure, which automatically takes an iterable and removes duplicates. Then, use the from function of the Array object which will then take an iterable and convert it into an array.
 
 Check out the snippet below :
 
@@ -614,7 +614,7 @@ for(var i = 0; i < 10; i++) {
 //3  We can Pass arguments to setTimeout function
 for(var i = 0; i < 10; i++) {
     setTimeout(function(e) {
-        console.log(e);  
+        console.log(e);
     }, 1000, i);
 }
 
@@ -632,7 +632,7 @@ function sayHi(){
     console.log("Hi");
 }
 
-setTimeout(sayHi, 1000); // Correct procedure to passs function as a reference 
+setTimeout(sayHi, 1000); // Correct procedure to passs function as a reference
 setTimeout(sayHi(), 1000) // You cannnt pass a function to setTimeout // ot will execute the function before timer
 
 
@@ -645,7 +645,7 @@ console.log(timerId); // same identifier (doesn't become null after canceling)
 
 let timerId1 = setInterval(() => console.log('tick'), 4000);
 
-// Running regular interval without setInterval function 
+// Running regular interval without setInterval function
 let timeoutRecursive = setTimeout(function tick() {
   alert('tick');
   timerId = setTimeout(tick, 2000); // (*)
@@ -673,16 +673,17 @@ console.log("Reverse of Function: ", reverse(devide)(10,0)); // Reverse of Funct
 
 function isPolindrome(input, length){
     for(var i=0; i < Math.floor(length/2); i++){
-        if(input[i] !== input[ length - 1 - i]) 
+        if(input[i] !== input[ length - 1 - i])
             return false;
     }
     return true;
 }
 
-console.log(isPolindrome('hari', 4) === false); // true   
+console.log(isPolindrome('hari', 4) === false); // true
 console.log(isPolindrome('eye', 3) === true); // true
 
 function isPalindrome(str) {
   str = str.replace(/\W/g, '').toLowerCase();
   return (str == str.split('').reverse().join(''));
 }
+```

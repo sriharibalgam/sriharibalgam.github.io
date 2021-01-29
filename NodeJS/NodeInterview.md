@@ -1,10 +1,3 @@
-/*
-Links:
-https://blog.risingstack.com/node-js-interview-questions-and-answers-2017/
-https://mindmajix.com/node-js-interview-questions
-https://codeforgeek.com/2017/08/node-js-interview-questions-answers-updated/
-https://www.javatpoint.com/node-js-interview-questions
-*/
 
 Module:
     Module is code block
@@ -74,4 +67,7 @@ How will you delete a directory?                            fs.rmdir(path, callb
  What is the purpose of __dirname variable?
 
 
-Buil
+##### References
+- https://mindmajix.com/node-js-interview-questions
+- https://codeforgeek.com/2017/08/node-js-interview-questions-answers-updated/
+- https://www.javatpoint.com/node-js-interview-questions

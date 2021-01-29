@@ -75,10 +75,6 @@ function log(logMsg){
 log("2 plus 2 equals " + (2+2) ); // will give 4
 log("2 plus 2 equals " + 2 + 2 ); // will give 22 -- JS converts them to Strings
 
-// var spec = prompt("rama", "hanuman");
-// if(spec === "hanuman") {
-//     alert("Yo man")
-// }
 
 var array1 = ['rama', "hanuma", "laxmana", "bharatha"];
 

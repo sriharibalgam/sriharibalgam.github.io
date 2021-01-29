@@ -117,7 +117,7 @@
 
     // Check in Object's Own Properties 
     console.log(jsObject.hasOwnProperty("name")); // Prints true | "name" is jsObject's Own property
-    console.log(jsObject.hasOwnProperty("toString")); // Prints true | "toString" is not jsObject's Own property.  
+    console.log(jsObject.hasOwnProperty("toString")); // Prints false | "toString" is not jsObject's Own property.  
     
 
 
